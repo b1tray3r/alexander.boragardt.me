@@ -3,8 +3,6 @@ site_url: https://alexander.borgardt.me
 repo_url: https://github.com/b1tray3r/alexander.boragardt.me.git
 theme:
   name: material
-  features:
-    - navigation.indexes
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -22,6 +20,11 @@ theme:
         name: Switch to light mode
   highlightjs: true
   hljs_languages:
+    - bash
+    - python
+    - yaml
+    - json
+    - golang
     - javascript
     - html
     - php
