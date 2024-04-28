@@ -28,3 +28,12 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-minify-plugin mkdocs-material
       - run: mkdocs build
+      - name: copy file via ssh key
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.KEY }}
+          source: "./alexander.boragardt.me/site"
+          target: "/var/opt/blog/"
