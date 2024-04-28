@@ -9,14 +9,14 @@ $ whoami
 ## groups
 
 ```php
+<?php
+
 $groups = (new Groups("aborgardt"))->get();
 
 print_r($groups);
 ```
 
-[![xing](files/xing.webp)](https://www.xing.com/profile/Alexander_Borgardt2)
-[![linkedin](files/linkedin.webp)](https://www.linkedin.com/in/alexander-borgardt-b053462b3/)
-[![github](files/github.webp)](https://github.com/b1tray3r)
+> [![xing](files/xing.webp)](https://www.xing.com/profile/Alexander_Borgardt2) [![linkedin](files/linkedin.webp)](https://www.linkedin.com/in/alexander-borgardt-b053462b3/) [![github](files/github.webp)](https://github.com/b1tray3r)
 
 ## pwd
 
