@@ -1,4 +1,4 @@
-site_name: Meine Home-/projects/page/lab
+site_name: My Home-/projects/page/lab
 site_url: https://alexander.borgardt.me
 repo_url: https://github.com/b1tray3r/alexander.boragardt.me.git
 theme:
@@ -13,8 +13,8 @@ theme:
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: deep orange
+      primary: green
+      accent: lime
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
