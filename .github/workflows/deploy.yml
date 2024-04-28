@@ -29,6 +29,9 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-minify-plugin mkdocs-material
       - run: mkdocs build
+      - name: list
+        run: |
+          ls -al ./alexander.borgardt.me/site
       - name: copy file via ssh key
         uses: appleboy/scp-action@v0.1.7
         with:
