@@ -1,0 +1,54 @@
+site_name: Meine Home-/projects/page/lab
+site_url: https://alexander.borgardt.me
+repo_url: https://github.com/b1tray3r/alexander.boragardt.me.git
+theme:
+  name: material
+  features:
+    - navigation.indexes
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: light-blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  highlightjs: true
+  hljs_languages:
+    - javascript
+    - html
+    - php
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+nav:
+  - About me: index.md
+  - Blog:
+      - blog/index.md
+  - Impressum: impressum.md
+plugins:
+  - search:
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+        remove_comments: true
+  - blog:
+      archive: true
+      blog_toc: true
+      authors_file: "{blog}/.authors.yml"
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
