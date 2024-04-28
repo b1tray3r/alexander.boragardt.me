@@ -7,10 +7,10 @@ on:
       - main
 permissions:
   contents: write
-environment: deployment-blog
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: deployment-blog
     steps:
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
