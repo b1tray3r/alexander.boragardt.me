@@ -55,3 +55,5 @@ plugins:
       post_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+extra_css:
+  - stylesheets/extra.css
