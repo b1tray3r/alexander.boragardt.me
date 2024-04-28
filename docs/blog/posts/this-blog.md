@@ -12,13 +12,15 @@ tags:
 
 As developers, we're passionate about writing code, sharing knowledge, and staying up-to-date with the latest tech trends. But let's face it: managing a blog can be a headache. Themes, styles, meta information—ugh! Wouldn't it be great if we could focus on content without the fuss?
 
+<!-- more -->
+
 ## The Past: Markdown and CMS Woes
 
-Years ago, I discovered Markdown—a clean, efficient way to format my notes and documentation. But my personal note-taking in Obsidian remained separate from my blog. Enter Grav CMS, which supported Markdown but fell short in the template department. Every time I tried a new theme, it was either a configuration nightmare or an outright installation failure.
+Years ago, I discovered Markdown—a clean, efficient way to format my notes and documentation. But my personal note-taking in [Obsidian](https://obsidian.md/) remained separate from my blog. Enter [Grav CMS](https://getgrav.org/), which supported Markdown but fell short in the template department. Every time I tried a new theme, it was either a configuration nightmare or an outright installation failure.
 
 ## The Present: Mkdocs Material to the Rescue
 
-Today, I've made a decision: I want to blog like a developer. No more CEO-friendly CMS. No more manual configurations. I want to create and deploy my blog automatically. So, I turned to Mkdocs Material. With Mkdocs, I can focus on writing, not theming.
+Today, I've made a decision: I want to blog like a developer. No more CEO-friendly CMS. No more manual configurations. I want to create and deploy my blog automatically. So, I turned to [Mkdocs Material](https://squidfunk.github.io/mkdocs-material/). With Mkdocs, I can focus on writing, not theming.
 
 **Why Mkdocs Material?**: Mkdocs Material is a fantastic choice for developer blogs. It provides a clean, responsive design out of the box, allowing you to focus on your content rather than wrestling with themes.
 
@@ -72,7 +74,7 @@ I wanted more than plain Markdown. So, I added two extensions:
    - [ ] unchecked
    - [x] checked
 
-2. **Mermaid JS Diagrams**: Mkdocs now renders Mermaid JS diagrams seamlessly.
+2. **Mermaid JS Diagrams**: Mkdocs now renders [Mermaid JS](https://mermaid.js.org/) diagrams seamlessly.
 
 ```yaml
 markdown_extensions:
@@ -90,7 +92,7 @@ markdown_extensions:
 My journey doesn't end here. I'm planning to automate deployment using GitHub Actions. Writing should be as smooth as coding:
 
 ```mermaid
-flowchart LR
+flowchart TD
 %%{init: {'theme': 'dark', 'flowchart' : {'width': '100%', 'defaultRenderer': 'elk'}}}%%
   write -- blogpost --> branch
   branch -- push --> repository
