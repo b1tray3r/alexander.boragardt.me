@@ -40,4 +40,4 @@ jobs:
           port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
           source: "/home/runner/work/alexander.boragardt.me/alexander.boragardt.me/site/*"
-          target: "/var/opt/blog/"
+          target: "/media/appdata/stacks/blog/data/"
